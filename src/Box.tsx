@@ -1,3 +1,6 @@
+// Make a box interface in a seperate file
+
+
 export interface NewBoxInterface {
   width: number;
   height: number;

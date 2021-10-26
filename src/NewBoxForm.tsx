@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { v4 as uuid } from 'uuid';
 
+// ADD CREATE in Here less confusion
+
+
 import { NewBoxInterface, CreatePropsInterface } from "./Box";
 
 /** Form for adding box.
@@ -13,6 +16,12 @@ import { NewBoxInterface, CreatePropsInterface } from "./Box";
  *
  * BoxList -> NewBoxForm
  */
+
+
+// New box from props better naming convention of how things belong
+// New box form props, iProps, name of component specific
+
+// Have variable for default for height and width, don't have re-input items.
 
 function NewBoxForm({ createBox }: CreatePropsInterface) {
   const [formData, setFormData] = useState<NewBoxInterface>({

@@ -14,12 +14,12 @@ function BoxList() {
 
   /** add box with given { id, width, height, backgroundColor } */
   function add(newBox: BoxInterface): void {
-    setBoxes(boxes => [...boxes, newBox]);
+    setBoxes((boxes) => [...boxes, newBox]);
   }
 
   /** remove box matching that id. */
   function remove(id: string): void {
-    setBoxes(boxes => boxes.filter(box => box.id !== id));
+    setBoxes((boxes) => boxes.filter((box) => box.id !== id));
   }
 
   // ask if we need to add an interface for return within boxes.map
